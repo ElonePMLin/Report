@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="image">
+    <file>image/daoru.png</file>
+    <file>image/daochu.png</file>
+    <file>image/zhongzhi.png</file>
+    <file>image/a-o.png</file>
+    <file>image/C.png</file>
+    <file>image/K.png</file>
+    <file>image/lingdang.png</file>
+    <file>image/Y.png</file>
+    <file>image/yao.png</file>
+  </qresource>
+</RCC>

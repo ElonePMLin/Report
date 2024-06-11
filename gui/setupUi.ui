@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>上新数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>退单金额</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>退单数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>成交客户数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>成交金额</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>成交商品件数</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>访客数</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>操作菜单</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>重置数据</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="resetEAction"/>
+     <addaction name="separator"/>
+     <addaction name="resetCAction"/>
+     <addaction name="separator"/>
+     <addaction name="resetKAction"/>
+     <addaction name="separator"/>
+     <addaction name="resetOAction"/>
+     <addaction name="separator"/>
+     <addaction name="resetYinAction"/>
+     <addaction name="separator"/>
+     <addaction name="resetYuAction"/>
+    </widget>
+    <widget class="QMenu" name="menuType_Here">
+     <property name="title">
+      <string>Type Here</string>
+     </property>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menu_2"/>
+    <addaction name="separator"/>
+    <addaction name="exportAction"/>
+    <addaction name="separator"/>
+    <addaction name="importSPUAction"/>
+    <addaction name="menuType_Here"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="emokeAction"/>
+   <addaction name="separator"/>
+   <addaction name="chengAction"/>
+   <addaction name="separator"/>
+   <addaction name="kaAction"/>
+   <addaction name="separator"/>
+   <addaction name="ouAction_4"/>
+   <addaction name="separator"/>
+   <addaction name="yinAction_5"/>
+   <addaction name="separator"/>
+   <addaction name="yuAction_6"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="emokeAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/lingdang.png</normaloff>:/image/image/lingdang.png</iconset>
+   </property>
+   <property name="text">
+    <string>艾莫克</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="chengAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/C.png</normaloff>:/image/image/C.png</iconset>
+   </property>
+   <property name="text">
+    <string>乘雀</string>
+   </property>
+   <property name="toolTip">
+    <string>乘雀</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="kaAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/K.png</normaloff>:/image/image/K.png</iconset>
+   </property>
+   <property name="text">
+    <string>卡维妲</string>
+   </property>
+   <property name="toolTip">
+    <string>卡维妲</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="ouAction_4">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/a-o.png</normaloff>:/image/image/a-o.png</iconset>
+   </property>
+   <property name="text">
+    <string>欧密坊</string>
+   </property>
+   <property name="toolTip">
+    <string>欧密坊</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="yinAction_5">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/Y.png</normaloff>:/image/image/Y.png</iconset>
+   </property>
+   <property name="text">
+    <string>银雪龙</string>
+   </property>
+   <property name="toolTip">
+    <string>银雪龙</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="yuAction_6">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/yao.png</normaloff>:/image/image/yao.png</iconset>
+   </property>
+   <property name="text">
+    <string>屿笙栀</string>
+   </property>
+   <property name="toolTip">
+    <string>屿笙栀</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetEAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/lingdang.png</normaloff>:/image/image/lingdang.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置艾莫克</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetCAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/C.png</normaloff>:/image/image/C.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置乘雀</string>
+   </property>
+   <property name="toolTip">
+    <string>乘雀</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetKAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/K.png</normaloff>:/image/image/K.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置卡维妲</string>
+   </property>
+   <property name="toolTip">
+    <string>卡维妲</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetOAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/a-o.png</normaloff>:/image/image/a-o.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置欧密坊</string>
+   </property>
+   <property name="toolTip">
+    <string>欧密坊</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetYinAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/Y.png</normaloff>:/image/image/Y.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置银雪龙</string>
+   </property>
+   <property name="toolTip">
+    <string>银雪龙</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="resetYuAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/yao.png</normaloff>:/image/image/yao.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置屿笙栀</string>
+   </property>
+   <property name="toolTip">
+    <string>屿笙栀</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="exportAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/daochu.png</normaloff>:/image/image/daochu.png</iconset>
+   </property>
+   <property name="text">
+    <string>一键导出</string>
+   </property>
+  </action>
+  <action name="importSPUAction">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/daoru.png</normaloff>:/image/image/daoru.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入SPU</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
